@@ -59,7 +59,7 @@ project "Hazel"
 	}
 
 	filter "system:windows"
-		cppdialect "c++19"
+		cppdialect "c++17"
 		systemversion "latest"
 
 		defines
@@ -71,7 +71,7 @@ project "Hazel"
 
 		postbuildcommands
 		{
-			"{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox"
+			"{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\""
 		}
 	
 	filter "configurations:Debug"
@@ -116,7 +116,7 @@ project "Sandbox"
 	}
 
 	filter "system:windows"
-		cppdialect "c++19"
+		cppdialect "c++17"
 		systemversion "latest"
 
 		defines
