@@ -16,6 +16,9 @@
     <Filter Include="Hazel\Platform">
       <UniqueIdentifier>{0D422A0B-F90F-1E11-E2A3-8E37CE10FA75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hazel\Platform\OpenGL">
+      <UniqueIdentifier>{A17A8072-0DE7-3B6D-D6DA-D3CA42065ED5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Hazel\Platform\Windows">
       <UniqueIdentifier>{47A9AB1A-33A3-D46C-1C10-6B7D08A93AD9}</UniqueIdentifier>
     </Filter>
@@ -32,6 +35,9 @@
       <Filter>Hazel\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Core\EntryPoint.h">
+      <Filter>Hazel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\Core\Input.h">
       <Filter>Hazel\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Core\KeyCodes.h">
@@ -67,11 +73,13 @@
     <ClInclude Include="src\Hazel\ImGui\ImGuiLayer.h">
       <Filter>Hazel\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Hazel\Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Hazel\Platform\Windows\WindowsWindow.h">
       <Filter>Hazel\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Core\Application.cpp">
@@ -86,13 +94,18 @@
     <ClCompile Include="src\Hazel\Core\Log.cpp">
       <Filter>Hazel\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
+      <Filter>Hazel\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Hazel\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\Platform\Windows\WindowsInput.cpp">
+      <Filter>Hazel\Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Hazel\Platform\Windows\WindowsWindow.cpp">
       <Filter>Hazel\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
-    <ClCompile Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
-    <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
-      <Filter>Hazel\ImGui</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
