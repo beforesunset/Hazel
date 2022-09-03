@@ -24,11 +24,16 @@ project "ImGui"
 		cppdialect "C++17"
 		staticruntime "On"
 
+	defines
+	{
+		"IMGUI_API=__declspec(dllexport)" 
+	}
+
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "On"
+		staticruntime "on"
 
 	filter "configurations:Debug"
 		runtime "Debug"
