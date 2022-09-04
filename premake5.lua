@@ -17,11 +17,11 @@ IncludeDir["GLAD"] = "Hazel/vendor/GLAD/include"
 IncludeDir["imgui"] = "Hazel/vendor/imgui"
 IncludeDir["glm"] = "Hazel/vendor/glm"
 
-
-include "Hazel/vendor/GLFW"
-include "Hazel/vendor/GLAD"
-include "Hazel/vendor/imgui"
-
+group "Dependencies"
+	include "Hazel/vendor/GLFW"
+	include "Hazel/vendor/GLAD"
+	include "Hazel/vendor/imgui"
+group "" 
 
 project "Hazel"
 	location "Hazel"

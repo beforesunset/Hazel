@@ -25,6 +25,9 @@
     <Filter Include="src\Hazel\Platform\Windows">
       <UniqueIdentifier>{7E106CB1-6A20-1882-D3D9-7CA0BF08071B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Hazel\Renderer">
+      <UniqueIdentifier>{9669EB43-824D-AC99-EBAD-A6ECD7B0961B}</UniqueIdentifier>
+    </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
     </Filter>
@@ -99,8 +102,17 @@
     <ClInclude Include="src\Hazel\ImGui\ImGuiLayer.h">
       <Filter>src\Hazel\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Hazel\Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Hazel\Platform\Windows\WindowsWindow.h">
       <Filter>src\Hazel\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\Renderer\GraphicContext.h">
+      <Filter>src\Hazel\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\Renderer\Shader.h">
+      <Filter>src\Hazel\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h">
       <Filter>src</Filter>
@@ -1191,8 +1203,6 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hazel\Renderer\GraphicContext.h" />
-    <ClInclude Include="src\Hazel\Platform\OpenGL\OpenGLContext.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Core\Application.cpp">
@@ -1213,15 +1223,20 @@
     <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
       <Filter>src\Hazel\ImGui</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Hazel\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Hazel\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Hazel\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Hazel\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Hazel\Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\Renderer\Shader.cpp">
+      <Filter>src\Hazel\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\hzpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Hazel\Platform\OpenGL\OpenGLContext.cpp" />
   </ItemGroup>
 </Project>
