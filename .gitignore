@@ -1,6 +1,14 @@
-# dectories
-.vs
-bin/
+# binaries
+**/bin/
 bin-int/
 # files
-*.user
+
+*.log
+
+# dectories
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
